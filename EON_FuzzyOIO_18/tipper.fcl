@@ -1,0 +1,76 @@
+FUNCTION_BLOCK tipper	// Block definition (there may be more than one block per file)
+
+VAR_INPUT				// Define input variables
+	fragRelativa : REAL;
+	indexSlot : REAL;
+END_VAR
+
+VAR_OUTPUT				// Define output variable
+	tip : REAL;
+END_VAR
+
+FUZZIFY fragRelativa			// Fuzzify input variable 'service': {'poor', 'good' , 'excellent'}
+	TERM baixoNivel := gauss 0 0.15; 
+	TERM mediobaixoNivel := gauss 0.25 0.15;
+	TERM medioNivel := gauss 0.5 0.15;
+	TERM medioaltoNivel := gauss 0.75 0.15;
+	TERM altoNivel := gauss 1.0 0.15;
+END_FUZZIFY
+
+FUZZIFY indexSlot			// Fuzzify input variable 'service': {'poor', 'good' , 'excellent'}
+	TERM inicio := gauss 0 20; 
+	TERM meioInicio := gauss 100 20;
+	TERM meio := gauss 200 20;
+	TERM meioFim := gauss 300 20;
+	TERM fim := gauss 400 20;
+END_FUZZIFY
+
+DEFUZZIFY tip			// Defuzzify output variable 'tip' : {'cheap', 'average', 'generous' }
+	TERM pessimo := (0,1) (0.1,0);
+	TERM razoavelbaixo := (0,0) (0.1,1) (0.2,0);
+	TERM razoavel := (0.1,0) (0.2,1) (0.3,0);
+	TERM razoavelalto := (0.2,0) (0.3,1) (0.4,0);
+	TERM excelente := (0.3,0) (0.4,1);
+	METHOD : COG;		// Use 'Center Of Gravity' defuzzification method
+	DEFAULT := 0;		// Default value is 0 (if no rule activates defuzzifier)
+END_DEFUZZIFY
+
+RULEBLOCK No1
+	AND : MIN;			// Use 'min' for 'and' (also implicit use 'max' for 'or' to fulfill DeMorgan's Law)
+	ACT : MIN;			// Use 'min' activation method
+	ACCU : MAX;			// Use 'max' accumulation method
+
+	RULE 1 : IF fragRelativa IS baixoNivel AND indexSlot IS inicio THEN tip IS pessimo;
+	RULE 2 : IF fragRelativa IS baixoNivel AND indexSlot IS meioInicio THEN tip IS razoavelbaixo;
+	RULE 3 : IF fragRelativa IS baixoNivel AND indexSlot IS meio THEN tip IS razoavel;
+	RULE 4 : IF fragRelativa IS baixoNivel AND indexSlot IS meioFim THEN tip IS razoavelbaixo;
+	RULE 5 : IF fragRelativa IS baixoNivel AND indexSlot IS fim THEN tip IS pessimo;
+	
+	RULE 6 : IF fragRelativa IS mediobaixoNivel AND indexSlot IS inicio THEN tip IS razoavelbaixo;
+	RULE 7 : IF fragRelativa IS mediobaixoNivel AND indexSlot IS meioInicio THEN tip IS razoavel;
+	RULE 8 : IF fragRelativa IS mediobaixoNivel AND indexSlot IS meio THEN tip IS razoavelalto;
+	RULE 9 : IF fragRelativa IS mediobaixoNivel AND indexSlot IS meioFim THEN tip IS razoavel;
+	RULE 10 : IF fragRelativa IS mediobaixoNivel AND indexSlot IS fim THEN tip IS razoavelbaixo;
+	
+	RULE 11 : IF fragRelativa IS medioNivel AND indexSlot IS inicio THEN tip IS razoavel;
+	RULE 12 : IF fragRelativa IS medioNivel AND indexSlot IS meioInicio THEN tip IS razoavelalto;
+	RULE 13 : IF fragRelativa IS medioNivel AND indexSlot IS meio THEN tip IS excelente;
+	RULE 14 : IF fragRelativa IS medioNivel AND indexSlot IS meioFim THEN tip IS razoavelalto;
+	RULE 15 : IF fragRelativa IS medioNivel AND indexSlot IS fim THEN tip IS razoavel;
+	
+	RULE 16 : IF fragRelativa IS medioaltoNivel AND indexSlot IS inicio THEN tip IS razoavelbaixo;
+	RULE 17 : IF fragRelativa IS medioaltoNivel AND indexSlot IS meioInicio THEN tip IS razoavel;
+	RULE 18 : IF fragRelativa IS medioaltoNivel AND indexSlot IS meio THEN tip IS razoavelalto;
+	RULE 19 : IF fragRelativa IS medioaltoNivel AND indexSlot IS meioFim THEN tip IS razoavel;
+	RULE 20 : IF fragRelativa IS medioaltoNivel AND indexSlot IS fim THEN tip IS razoavelbaixo;
+
+	RULE 21 : IF fragRelativa IS altoNivel AND indexSlot IS inicio THEN tip IS pessimo;
+	RULE 22 : IF fragRelativa IS altoNivel AND indexSlot IS meioInicio THEN tip IS razoavelbaixo;
+	RULE 23 : IF fragRelativa IS altoNivel AND indexSlot IS meio THEN tip IS razoavel;
+	RULE 24 : IF fragRelativa IS altoNivel AND indexSlot IS meioFim THEN tip IS razoavelbaixo;
+	RULE 25 : IF fragRelativa IS altoNivel AND indexSlot IS fim THEN tip IS pessimo;
+		
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
+

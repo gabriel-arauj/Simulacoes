@@ -1,0 +1,71 @@
+Metrics;LoadPoint;ResourceClass;src;dest;link;;rep1;rep2;rep3;rep4;rep5;rep6;rep7;rep8;rep9;rep10
+Average Loans;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Max Loans;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Preemptions;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Preemptions;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Preemptions;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Preemptions;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Preemptions;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Devolutions;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Devolutions;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Devolutions;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Devolutions;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Devolutions;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Average Loans High To Low;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans High To Low;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans High To Low;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans High To Low;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans High To Low;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Average Loans Low To High;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans Low To High;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans Low To High;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans Low To High;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Average Loans Low To High;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Max Loans High To Low;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans High To Low;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans High To Low;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans High To Low;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans High To Low;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Max Loans Low To High;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans Low To High;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans Low To High;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans Low To High;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Max Loans Low To High;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+Metrics;LoadPoint;Class;src;dest;bandwidth; ;rep1;rep2;rep3;rep4;rep5;rep6;rep7;rep8;rep9;rep10
+Restorability Geral;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Restorability Geral;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Restorability Geral;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Restorability Geral;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Restorability Geral;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Maximum number of simultaneous failures;1;all;all;all;all; ;0;0;0;0;0;0;0;0;0;0
+Maximum number of simultaneous failures;2;all;all;all;all; ;0;0;0;0;0;0;0;0;0;0
+Maximum number of simultaneous failures;3;all;all;all;all; ;0;0;0;0;0;0;0;0;0;0
+Maximum number of simultaneous failures;4;all;all;all;all; ;0;0;0;0;0;0;0;0;0;0
+Maximum number of simultaneous failures;5;all;all;all;all; ;0;0;0;0;0;0;0;0;0;0
+
+
+Number of generated failure;1;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Number of generated failure;2;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Number of generated failure;3;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Number of generated failure;4;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+Number of generated failure;5;all;all;all;all; ;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0
+
+
+Number of generated request;1;all;all;all;all; ;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0
+Number of generated request;2;all;all;all;all; ;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0
+Number of generated request;3;all;all;all;all; ;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0
+Number of generated request;4;all;all;all;all; ;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0
+Number of generated request;5;all;all;all;all; ;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0;105291.0
+
+
+
+
+
+
+
+

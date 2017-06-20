@@ -1,0 +1,8 @@
+generate failures:false
+minimum number of failures:0
+multiplicative factor:1
+activate QoTN:true
+activate QoTO:true
+sigma:0.0
+resource class:0
+regenerators nodes:0
