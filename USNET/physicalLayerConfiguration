@@ -3,7 +3,7 @@ span length (km):100
 fiber loss (dB/km):0.2
 fiber nonlinearity:1.22
 fiber dispersion:16.0E-24
-dispersion compensation ratio:0.0
+dispersion compensation ratio:0.95
 constant of Planck:6.626E-34
 center frequency:193.0E+12
 noise figure of optical amplifier (dB):6
