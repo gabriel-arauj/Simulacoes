@@ -1,14 +1,9 @@
 launched power per channel (dBm):0
-span length (km):100
+span length (km):50
 fiber loss (dB/km):0.2
 fiber nonlinearity:1.22
-<<<<<<< HEAD
 fiber dispersion:16.0E-24
-dispersion compensation ratio:0.95
-=======
-fiber dispersion:20.0E-24
 dispersion compensation ratio:0.0
->>>>>>> 477e981a3d479969e5ce53e8f8a5e88e6d3f113b
 constant of Planck:6.626E-34
 center frequency:193.0E+12
 noise figure of optical amplifier (dB):6
