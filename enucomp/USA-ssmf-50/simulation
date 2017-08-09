@@ -1,4 +1,4 @@
-//simulacao com a topologia NSFNet
+//simulacao com a topologia USNET
 requests:1000000
 rsa:sequencial;djk;firstfit
 loadPoints:5
